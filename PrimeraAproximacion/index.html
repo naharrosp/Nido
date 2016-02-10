@@ -5,20 +5,28 @@
   <meta name="description" content="Nido">
 
 
+
+
 <head>
-
-<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-
-  <!-- Latest compiled and minified CSS -->
-   <!-- Latest compiled and minified CSS -->
-
+  <!-- necesarios globalmente -->
+  <script src="js/cosas.js"></script>
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="css/navbar.css">
+  <!-- para el docxtemplater -->
+  <script src="js/FileSaver.min.js"></script>
+  <script src="js/jszip-utils.js"></script>
+  <script src="js/docxtemplater.js"></script>
+  <script src="js/docxtemplater.min.js"></script>
 
-<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <!-- tema Navbar -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <!-- calendario -->
+          <script src="js/bootstrap-datepicker.js"></script>
+          <script src="js/bootstrap-datepicker.es.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <!-- <script src="js/main.min.js"></script> -->
 </head>
 
 
@@ -62,21 +70,8 @@
                 
             </div>
           </div>
-        <script src="js/jquery-2.2.0.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/bootstrap-datepicker.es.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-                
-                $('.datepicker').datepicker({
 
-                    format: "dd/mm/yyyy",
-                    language: 'es'
-                    
-                     
-                });  
-            
-            });
         </script>
           <div class="row ">
                <ul class="list-group">
@@ -91,28 +86,9 @@
                   <li class="list-group-item">niño9</li>
                   <li class="list-group-item">niño10</li>
               </ul>
-              <script type="text/javascript">
-                        $(function(){
-                        //onsole.log('ready');
-
-                        $('.list-group li').click(function(e) {
-                            e.preventDefault()
-                             
-                            document.getElementById("fechaInforme").innerHTML= $("#miDia").data('datepicker').getFormattedDate('yyyy-mm-dd');
-
-                            $that = $(this);
-
-                            $that.parent().find('li').removeClass('active');
-                            $that.addClass('active');
-                            document.getElementById("ninoInforme").innerHTML= $that.text();
-                        });
-                    })
-             </script>
+              
           </div>
         </div>
-        <!-- Load jQuery and bootstrap datepicker scripts -->
-
-
 
 
         <div class="col-md-9  well">
@@ -130,52 +106,56 @@
                   <div class="tab-pane fade in active" id="A">
                     <div id="fechaInforme" class="row col-lg-6 text-center">twertwe </div>
                     <div id="ninoInforme" class="row col-lg-6 text-center">twertwe </div>
-                    <form action="" class="form-horizontal">
+
+                    <form class="form-horizontal">
                       <div class="form-group">
                         <label for="user-name" class="col-lg-2 control-label">Cargo</label>
                         <div class="col-lg-10">
-                          <input type="text" class="form-control" id="user-name" placeholder="Introduzca su cargo">
+                          <input type="text" class="form-control" id="cargo" placeholder="Introduzca su cargo">
                         </div>
                       </div><!-- End form group -->
 
                       <div class="form-group">
                         <label for="user-email" class="col-lg-2 control-label">Titulo</label>
                         <div class="col-lg-10">
-                          <input type="text" class="form-control" id="user-email" placeholder="lo que sea">
+                          <input type="text" class="form-control" id="titulo" placeholder="lo que sea">
                         </div>
                       </div><!-- End form group -->
 
                       <div class="form-group">
                         <label for="user-url" class="col-lg-2 control-label">Motivo de la entrada</label>
                         <div class="col-lg-10">
-                          <input type="text" class="form-control" id="user-email" placeholder="no se">
+                          <input type="text" class="form-control" id="motivo" placeholder="no se">
                         </div>
                       </div><!-- End form group -->
 
                       <div class="form-group">
                         <label for="user-message" class="col-lg-2 control-label">Contenido</label>
                         <div class="col-lg-10">
-                          <textarea name="user-message" id="user-message" class="form-control" 
+                          <textarea name="user-message" id="contenido" class="form-control" 
                           cols="20" rows="10" placeholder="Introduzca aqui el informe"></textarea>
                         </div>
                       </div><!-- End form group -->
 
                       <div class="form-group">
                         <div class="col-lg-10 col-lg-offset-2">
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" onclick="javascript: crear();" id="enviar" class="btn btn-primary">Guardar</button>
                         </div>
                       </div>
                      </form>
+
                   </div>
                   <div class="tab-pane fade" id="B">hueco para situacion falimiar</div>
                   <div class="tab-pane fade" id="C">hueco para reuniones</div>
                   <div class="tab-pane fade" id="D">hueco para Docs</div>
-          
+
               </div>
+              
       </div>
     
   </div>
  
  
-</body>	
+<script src="js/cosas.js"></script>
+</body> 
 </html>
