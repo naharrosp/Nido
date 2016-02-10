@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'lamia'; /*a name to be used later*/
+    src: url(../fonts/monogb.ttf); /*URL to font*/
+}
+.navbar-default {
+  background-color: #2e59bc;
+  border-color: #1f3c7c;
+}
+.navbar-default .navbar-brand {
+  color: #e6aa28;
+  font-family: lamia;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #e6aa28;
+}
+.navbar-default .navbar-text {
+  color: #e6aa28;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #e6aa28;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e6aa28;
+  background-color: #1f3c7c;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #e6aa28;
+  background-color: #1f3c7c;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #e6aa28;
+  background-color: #1f3c7c;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1f3c7c;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1f3c7c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e6aa28;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e6aa28;
+}
+.navbar-default .navbar-link {
+  color: #e6aa28;
+}
+.navbar-default .navbar-link:hover {
+  color: #e6aa28;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #e6aa28;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e6aa28;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e6aa28;
+    background-color: #1f3c7c;
+  }
+}

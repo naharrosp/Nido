@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <meta charset="utf-8">
+  <title>Nido App </title>
+  <meta name="description" content="Nido">
+
+
+
+
+<head>
+  <!-- necesarios globalmente -->
+  <script src="js/cosas.js"></script>
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- para el docxtemplater -->
+  <script src="js/FileSaver.min.js"></script>
+  <script src="js/jszip-utils.js"></script>
+  <script src="js/docxtemplater.js"></script>
+  <script src="js/docxtemplater.min.js"></script>
+
+  <!-- tema Navbar -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <!-- calendario -->
+          <script src="js/bootstrap-datepicker.js"></script>
+          <script src="js/bootstrap-datepicker.es.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <!-- <script src="js/main.min.js"></script> -->
+</head>
+
+
+
+<body data-spy="scroll" data-target="#my-navbar"> <!-- igual luego usamos el spy -->
+
+
+
+  <!-- Navbar -->
+    <nav class="navbar-default " id="my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <img alt="Brand" src="images/logor.png" height="35px" style="padding-top: 20px;"/>
+          <a href="" class="navbar-brand">Nido</a>
+       </div><!-- Navbar Header-->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          
+        <a href="" class="btn btn-warning navbar-btn navbar-right">Administrar</a>
+          <ul class="nav navbar-nav">
+            <li><a href="#Zona1">Zona1</a> 
+            <li><a href="#Zona2">Zona2</a> 
+            <li><a href="#Zona3">Zona3</a> 
+            <li><a href="#Zona4">Zona4</a> 
+
+          </ul>
+        </div>
+      </div><!-- End Container-->
+    </nav><!-- End navbar -->
+
+      <div class="container"> 
+        <div class="col-md-3  well " style="padding-left: 0px;padding-right:  0px;">
+          <div class="row center-block" style="width:215px">
+            <div id="miDia" name="miDia" class="datepicker" style="width: 100%;" >
+                
+            </div>
+          </div>
+        <script type="text/javascript">
+
+        </script>
+          <div class="row " style="    margin-left: 15px;    margin-right:  15px;">
+               <ul class="list-group">
+                  <li  class="list-group-item">niño1</li>
+                  <li class="list-group-item">niño2</li>
+                  <li class="list-group-item">niño3</li>
+                  <li class="list-group-item">niño4</li>
+                  <li class="list-group-item">niño5</li>
+                  <li class="list-group-item">niño6</li>
+                  <li class="list-group-item">niño7</li>
+                  <li class="list-group-item">niño8</li>
+                  <li class="list-group-item">niño9</li>
+                  <li class="list-group-item">niño10</li>
+              </ul>
+              
+          </div>
+        </div>
+
+
+        <div class="col-md-9  well">
+          
+              <ul class="nav nav-tabs">
+                  <li class="nav active"><a href="#A" data-toggle="tab">Informes</a></li>
+                  <li class="nav"><a href="#B" data-toggle="tab">Situación familiar</a></li>
+                  <li class="nav"><a href="#C" data-toggle="tab">Reuniones</a></li>
+                  <li class="nav"><a href="#D" data-toggle="tab">Docs</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+
+              <div class="tab-content">
+                  <div class="tab-pane fade in active" id="A">
+                    <div id="fechaInforme" class="row col-lg-6 text-center">twertwe </div>
+                    <div id="ninoInforme" class="row col-lg-6 text-center">twertwe </div>
+
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="user-name" class="col-lg-2 control-label">Cargo</label>
+                        <div class="col-lg-10">
+                          <input type="text" class="form-control" id="cargo" placeholder="Introduzca su cargo">
+                        </div>
+                      </div><!-- End form group -->
+
+                      <div class="form-group">
+                        <label for="user-email" class="col-lg-2 control-label">Titulo</label>
+                        <div class="col-lg-10">
+                          <input type="text" class="form-control" id="titulo" placeholder="lo que sea">
+                        </div>
+                      </div><!-- End form group -->
+
+                      <div class="form-group">
+                        <label for="user-url" class="col-lg-2 control-label">Motivo de la entrada</label>
+                        <div class="col-lg-10">
+                          <input type="text" class="form-control" id="motivo" placeholder="no se">
+                        </div>
+                      </div><!-- End form group -->
+
+                      <div class="form-group">
+                        <label for="user-message" class="col-lg-2 control-label">Contenido</label>
+                        <div class="col-lg-10">
+                          <textarea name="user-message" id="contenido" class="form-control" 
+                          cols="20" rows="10" placeholder="Introduzca aqui el informe"></textarea>
+                        </div>
+                      </div><!-- End form group -->
+
+                      <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                          <button type="submit" onclick="javascript: crear();" id="enviar" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                     </form>
+
+                  </div>
+                  <div class="tab-pane fade" id="B">hueco para situacion falimiar</div>
+                  <div class="tab-pane fade" id="C">hueco para reuniones</div>
+                  <div class="tab-pane fade" id="D">hueco para Docs</div>
+
+              </div>
+              
+      </div>
+    
+  </div>
+ 
+ 
+<script src="js/cosas.js"></script>
+</body> 
+</html>
