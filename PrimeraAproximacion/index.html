@@ -107,42 +107,59 @@
                     <div id="fechaInforme" class="row col-lg-6 text-center">twertwe </div>
                     <div id="ninoInforme" class="row col-lg-6 text-center">twertwe </div>
 
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="user-name" class="col-lg-2 control-label">Cargo</label>
-                        <div class="col-lg-10">
-                          <input type="text" class="form-control" id="cargo" placeholder="Introduzca su cargo">
-                        </div>
-                      </div><!-- End form group -->
+                    <div class="row">
 
-                      <div class="form-group">
-                        <label for="user-email" class="col-lg-2 control-label">Titulo</label>
-                        <div class="col-lg-10">
-                          <input type="text" class="form-control" id="titulo" placeholder="lo que sea">
-                        </div>
-                      </div><!-- End form group -->
+                      <!-- Thumbnail niño -->
+                      <div class="col-md-2">
+                          <div class="thumbnail">
+                            <img src="images/niño.jpg" alt="imagen_niño" />
+                            <div class="caption">
+                              <h5 class="text-center">Niño X</h5>
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-10">
+                        <form class="form-horizontal">
+                        <div class="form-group">
+                          <label for="user-name" class="col-lg-2 control-label">Cargo</label>
+                          <div class="col-lg-10">
+                            <input type="text" class="form-control" id="cargo" placeholder="Introduzca su cargo">
+                          </div>
+                        </div><!-- End form group -->
 
-                      <div class="form-group">
-                        <label for="user-url" class="col-lg-2 control-label">Motivo de la entrada</label>
-                        <div class="col-lg-10">
-                          <input type="text" class="form-control" id="motivo" placeholder="no se">
-                        </div>
-                      </div><!-- End form group -->
+                        <div class="form-group">
+                          <label for="user-email" class="col-lg-2 control-label">Titulo</label>
+                          <div class="col-lg-10">
+                            <input type="text" class="form-control" id="titulo" placeholder="lo que sea">
+                          </div>
+                        </div><!-- End form group -->
 
-                      <div class="form-group">
-                        <label for="user-message" class="col-lg-2 control-label">Contenido</label>
-                        <div class="col-lg-10">
-                          <textarea name="user-message" id="contenido" class="form-control" 
-                          cols="20" rows="10" placeholder="Introduzca aqui el informe"></textarea>
-                        </div>
-                      </div><!-- End form group -->
-
+                        <div class="form-group">
+                          <label for="user-url" class="col-lg-2 control-label">Motivo de la entrada</label>
+                          <div class="col-lg-10">
+                            <input type="text" class="form-control" id="motivo" placeholder="no se">
+                          </div>
+                        </div><!-- End form group -->
+                      </div> <!-- End row -->
+                      <div class="row">                        
+                        <div class="form-group">
+                          <label for="user-message" class="col-lg-2 control-label">Contenido</label>
+                          <div class="col-lg-10 col-lg-offset-1">
+                            <textarea name="user-message" id="contenido" class="form-control" 
+                            cols="20" rows="10" placeholder="Introduzca aqui el informe"></textarea>
+                          </div>
+                        </div><!-- End form group -->
+                      </div> <!-- End row -->
                       <div class="form-group">
                         <div class="col-lg-10 col-lg-offset-2">
                           <button type="submit" onclick="javascript: crear();" id="enviar" class="btn btn-primary">Guardar</button>
                         </div>
                       </div>
                      </form>
+                    </div>
+
+                    
 
                   </div>
                   <div class="tab-pane fade" id="B">hueco para situacion falimiar</div>
