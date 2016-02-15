@@ -1,0 +1,3 @@
+Deben guardarse dos documentos: uno que no contenga las etiquetas preparadas para el siguiente, y al que no se tenga acceso desde fuera
+
+el segundo documento será el que se mostrará en los link
