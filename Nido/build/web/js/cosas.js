@@ -40,17 +40,33 @@ $(function(){
   });
 })
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> refs/remotes/lrodriguezesc/master
 // Funcion que inicializa el calendario en espanol y con el formato deseado
 $(document).ready(function () {
 
   $('.datepicker').datepicker({
 
   format: "dd/mm/yyyy",
+<<<<<<< HEAD
   language: 'es'
 
 
   });  
 
 });
+=======
+  language: 'es',
+  todayHighlight: true,
+  
+  }); 
+  $("#miDia").datepicker().on('changeDate', function () {
+        document.getElementById("fechaInforme").innerHTML= $("#miDia").data('datepicker').getFormattedDate('yyyy-mm-dd');
+    }); 
+}  
+);
+    
+>>>>>>> refs/remotes/lrodriguezesc/master
