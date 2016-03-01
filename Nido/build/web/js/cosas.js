@@ -40,25 +40,13 @@ $(function(){
   });
 })
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> refs/remotes/lrodriguezesc/master
 // Funcion que inicializa el calendario en espanol y con el formato deseado
 $(document).ready(function () {
 
   $('.datepicker').datepicker({
 
   format: "dd/mm/yyyy",
-<<<<<<< HEAD
-  language: 'es'
-
-
-  });  
-
-});
-=======
   language: 'es',
   todayHighlight: true,
   
@@ -69,4 +57,4 @@ $(document).ready(function () {
 }  
 );
     
->>>>>>> refs/remotes/lrodriguezesc/master
+
